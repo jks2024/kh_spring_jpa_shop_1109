@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <configuration>
     <property name="LOG_PATH" value="./logs"/>
 
@@ -34,3 +35,10 @@
         <appender-ref ref="INFO_LOG"/>
     </root>
 </configuration>
+=======
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+</beans>
+>>>>>>> origin/master

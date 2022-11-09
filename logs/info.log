@@ -16,6 +16,7 @@
 [2022-11-10 00:04:12.402] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
 [2022-11-10 00:04:12.405] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
 [2022-11-10 00:04:12.427] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+<<<<<<< HEAD
 [2022-11-10 00:05:58.306] [INFO ] [main] com.shop.repository.ItemRepositoryTest Starting ItemRepositoryTest using Java 11.0.15 on Kyungui-MacBookPro-2.local with PID 11883 (started by kyungsoojeong in /Users/kyungsoojeong/Dev/kh_spring_jpa_shop_1109)
 [2022-11-10 00:05:58.309] [INFO ] [main] com.shop.repository.ItemRepositoryTest No active profile set, falling back to 1 default profile: "default"
 [2022-11-10 00:05:59.504] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -126,3 +127,5 @@
 [2022-11-10 05:46:30.619] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
 [2022-11-10 05:46:30.624] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
 [2022-11-10 05:46:30.643] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+=======
+>>>>>>> origin/master

@@ -4,6 +4,8 @@ import com.shop.constant.ItemSellStatus;
 import com.shop.entity.Item;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
@@ -19,6 +21,8 @@ class ItemRepositoryTest {
 
     @Autowired
     ItemRepository itemRepository;
+
+    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass().getSimpleName());
 
     @Test
     @DisplayName("상품 저장 테스트")
@@ -63,6 +67,16 @@ class ItemRepositoryTest {
         List<Item> itemList = itemRepository.findByItemNmOrItemDetail("테스트 상품1", "테스트 상품 상세 설명5");
         for(Item item : itemList) {
             System.out.println(item.toString());
+        }
+    }
+    @Test
+    @DisplayName("가격 LessThan 테스트")
+    public void findByPriceLessThanTest() {
+        this.createItemList();
+        List<Item> itemList = itemRepository.findByPriceLessThan(10005);
+        for(Item item : itemList) {
+            //System.out.println(item.toString());
+            LOGGER.info(item.toString());
         }
     }
 }

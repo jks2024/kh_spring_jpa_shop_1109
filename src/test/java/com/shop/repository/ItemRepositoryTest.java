@@ -8,12 +8,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestPropertySource;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 //@TestPropertySource(locations="classpath:application-test.properties")
@@ -21,7 +18,6 @@ class ItemRepositoryTest {
 
     @Autowired
     ItemRepository itemRepository;
-
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass().getSimpleName());
 
     @Test
@@ -78,5 +74,24 @@ class ItemRepositoryTest {
             //System.out.println(item.toString());
             LOGGER.info(item.toString());
         }
+    }
+    @Test
+    @DisplayName("가격 내림차순 조회 테스트")
+    public void findByPriceLessThanOrderByPriceDesc() {
+        this.createItemList();
+        List<Item> itemList = itemRepository.findByPriceLessThanOrderByPriceDesc(10005);
+        for(Item item : itemList) {
+            LOGGER.info(item.toString());
+        }
+    }
+    @Test
+    @DisplayName("@Query를 이용한 상품 조회 테스트")
+    public void findByItemDetailTest() {
+        this.createItemTest();
+        List<Item> itemList = itemRepository.findByItemDetail("테스트 상품 상세 설명");
+        for(Item item : itemList) {
+            LOGGER.info(item.toString());
+        }
+
     }
 }

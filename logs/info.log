@@ -292,3 +292,31 @@
 [2022-11-10 18:42:28.516] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
 [2022-11-10 18:42:28.518] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
 [2022-11-10 18:42:28.532] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2022-11-10 23:17:44.509] [INFO ] [main] com.shop.repository.ItemRepositoryTest Starting ItemRepositoryTest using Java 11.0.15 on Kyungui-MacBookPro-2.local with PID 74809 (started by kyungsoojeong in /Users/kyungsoojeong/Dev/kh_spring_jpa_shop_1109)
+[2022-11-10 23:17:44.513] [INFO ] [main] com.shop.repository.ItemRepositoryTest No active profile set, falling back to 1 default profile: "default"
+[2022-11-10 23:17:45.690] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-10 23:17:45.751] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+[2022-11-10 23:17:46.833] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-10 23:17:46.883] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.12.Final
+[2022-11-10 23:17:47.063] [INFO ] [main] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-11-10 23:17:47.174] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2022-11-10 23:17:47.932] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2022-11-10 23:17:47.962] [INFO ] [main] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[2022-11-10 23:17:48.914] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-11-10 23:17:48.922] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-10 23:17:49.363] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-11-10 23:17:50.198] [WARN ] [main] org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2022-11-10 23:17:51.075] [INFO ] [main] com.shop.repository.ItemRepositoryTest Started ItemRepositoryTest in 7.535 seconds (JVM running for 9.209)
+[2022-11-10 23:17:51.565] [INFO ] [main] ItemRepositoryTest Item(id=10, itemNm=테스트 상품10, price=10010, stockNumber=100, itemDetail=테스트 상품 상세 설명10, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.423824, updateTime=2022-11-10T23:17:51.423836)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=9, itemNm=테스트 상품9, price=10009, stockNumber=100, itemDetail=테스트 상품 상세 설명9, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.412551, updateTime=2022-11-10T23:17:51.412564)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=8, itemNm=테스트 상품8, price=10008, stockNumber=100, itemDetail=테스트 상품 상세 설명8, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.404280, updateTime=2022-11-10T23:17:51.404291)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=7, itemNm=테스트 상품7, price=10007, stockNumber=100, itemDetail=테스트 상품 상세 설명7, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.397718, updateTime=2022-11-10T23:17:51.397757)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=6, itemNm=테스트 상품6, price=10006, stockNumber=100, itemDetail=테스트 상품 상세 설명6, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.390023, updateTime=2022-11-10T23:17:51.390037)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=5, itemNm=테스트 상품5, price=10005, stockNumber=100, itemDetail=테스트 상품 상세 설명5, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.382224, updateTime=2022-11-10T23:17:51.382238)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=4, itemNm=테스트 상품4, price=10004, stockNumber=100, itemDetail=테스트 상품 상세 설명4, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.371604, updateTime=2022-11-10T23:17:51.371648)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=3, itemNm=테스트 상품3, price=10003, stockNumber=100, itemDetail=테스트 상품 상세 설명3, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.364161, updateTime=2022-11-10T23:17:51.364206)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=2, itemNm=테스트 상품2, price=10002, stockNumber=100, itemDetail=테스트 상품 상세 설명2, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.351720, updateTime=2022-11-10T23:17:51.351735)
+[2022-11-10 23:17:51.568] [INFO ] [main] ItemRepositoryTest Item(id=1, itemNm=테스트 상품1, price=10001, stockNumber=100, itemDetail=테스트 상품 상세 설명1, itemSellStatus=SELL, regTime=2022-11-10T23:17:51.250896, updateTime=2022-11-10T23:17:51.250951)
+[2022-11-10 23:17:51.617] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-10 23:17:51.623] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2022-11-10 23:17:51.649] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
